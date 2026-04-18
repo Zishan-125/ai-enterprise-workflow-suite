@@ -1,0 +1,34 @@
+# --- General Dependencies & Builds ---
+node_modules/
+dist/
+dist-ssr/
+*.local
+logs
+*.log
+
+# --- Specific Sub-folder Protection ---
+Backend/node_modules/
+Frontend/node_modules/
+Frontend/dist/
+
+# --- Environment & Security (CRITICAL) ---
+.env
+.env.test
+.env.production
+Backend/.env
+Frontend/.env
+
+# --- Prisma & Database ---
+/Backend/prisma/dev.db
+/Backend/prisma/dev.db-journal
+/generated/prisma
+*.db
+*.sqlite
+
+# --- Editor & OS Files ---
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.sw?
