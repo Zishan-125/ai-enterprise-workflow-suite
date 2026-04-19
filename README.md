@@ -36,7 +36,7 @@ Built for **innovation ecosystems**, SmartDo acts as a **Neural Task Architect**
 
 ## 🏗️ System Architecture (Industry Flow)
 
-```mermaid
+
 flowchart TD
     subgraph Client Layer
         A[User Interaction]
