@@ -36,8 +36,6 @@ Built for **innovation ecosystems**, SmartDo acts as a **Neural Task Architect**
 
 ## 🏗️ System Architecture
 
-## 🏗️ System Architecture
-
 SmartDo follows a high-availability, distributed cloud architecture.
 
 ## 🧠 Neural System Workflow (Live Execution Flow)
