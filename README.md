@@ -47,10 +47,11 @@ SmartDo follows a high-availability, distributed cloud architecture:
 
 ## 🛠️ Deployment Procedure (The "Zero-to-Cloud" Path)
 
-graph LR
-A[User Interface - Vercel] --> B[Backend API - Render]
-B --> C[Database - Aiven MySQL]
-B --> D[AI Service - Gemini API]
+<p align="center">
+  <img src="https://img.shields.io/badge/Database-Aiven-blue?style=for-the-badge&logo=mysql" />
+  <img src="https://img.shields.io/badge/Backend-Render-46E3B7?style=for-the-badge&logo=render" />
+  <img src="https://img.shields.io/badge/Frontend-Vercel-black?style=for-the-badge&logo=vercel" />
+</p>
 
 ### 1. Database Provisioning (Aiven)
 * Deploy a MySQL 8.0 instance.
