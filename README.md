@@ -85,9 +85,10 @@ SmartDo follows a high-availability, distributed cloud architecture:
 | :--- | :--- |
 | **Frontend** | React, TypeScript, Tailwind CSS, Framer Motion |
 | **Backend** | Node.js, Express, Axios |
+| **ORM (Data Layer)** | Prisma |
 | **Database** | MySQL (via Aiven) |
 | **Deployment** | Vercel (UI), Render (API) |
-| **AI** | Google Gemini 1.5 Flash |
+| **AI** | Google Gemini 2.5 Flash |
 
 ---
 
