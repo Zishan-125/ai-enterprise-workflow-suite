@@ -71,14 +71,16 @@ SmartDo follows a high-availability, distributed cloud architecture:
 
 ---
 
-2. Initialize Engine (Backend):
+2. **Initialize Engine (Backend):**
+   ```bash
    cd Backend
    npm install
    npm start
 
 ---
 
-3. Initialize UI (Frontend):
+3. **Initialize UI (Frontend):**
+   ```bash
    cd Frontend
    npm install
    npm run dev
