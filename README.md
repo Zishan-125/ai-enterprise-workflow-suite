@@ -36,14 +36,18 @@ Built for **innovation ecosystems**, SmartDo acts as a **Neural Task Architect**
 
 ## 🏗️ System Architecture
 
-SmartDo follows a high-availability, distributed cloud architecture:
+## 🏗️ System Architecture
+
+SmartDo follows a high-availability, distributed cloud architecture.
+
+### 🛰️ Neural Request Lifecycle
 
 sequenceDiagram
     participant U as User
     participant FE as React Frontend (Vercel)
     participant BE as Node.js Engine (Render)
     participant DB as MySQL (Aiven)
-    participant AI as Gemini 1.5 Flash
+    participant AI as Gemini 2.5 Flash
 
     U->>FE: Updates Task Status to "High Risk"
     FE->>BE: PUT /api/tasks/:id (JWT Auth)
@@ -58,6 +62,7 @@ sequenceDiagram
     
     BE-->>FE: HTTP 200 (Updated Task + AI Insight)
     FE->>U: UI Update (Real-time View)
+
 
 * **Frontend (Neural UI):** Built with **React 18** and **TypeScript**. Powered by **Vite** for sub-second hot module replacement.
 * **Neural Engine (API):** A scalable **Node.js/Express** microservice hosted on **Render**, handling JWT authentication and encrypted data flow.
