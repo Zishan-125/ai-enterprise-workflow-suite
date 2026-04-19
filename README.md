@@ -34,7 +34,14 @@ Built for **innovation ecosystems**, SmartDo acts as a **Neural Task Architect**
 
 ---
 
-## 🏗️ System Architecture SmartDo follows a high-availability, distributed cloud architecture: * **Frontend (Neural UI):** Built with **React 18** and **TypeScript**. Powered by **Vite** for sub-second hot module replacement. * **Neural Engine (API):** A scalable **Node.js/Express** microservice hosted on **Render**, handling JWT authentication and encrypted data flow. * **Database (Memory Cell):** An enterprise-grade **MySQL** instance hosted on **Aiven (Bangalore Cluster)**, ensuring ACID compliance. * **Cognitive Layer (AI):** Integration with **Google Gemini AI** for real-time task risk assessment and strategic advising.
+## 🏗️ System Architecture
+
+SmartDo follows a high-availability, distributed cloud architecture:
+
+* **Frontend (Neural UI):** Built with **React 18** and **TypeScript**. Powered by **Vite** for sub-second hot module replacement.
+* **Neural Engine (API):** A scalable **Node.js/Express** microservice hosted on **Render**, handling JWT authentication and encrypted data flow.
+* **Database (Memory Cell):** An enterprise-grade **MySQL** instance hosted on **Aiven (Bangalore Cluster)**, ensuring ACID compliance.
+* **Cognitive Layer (AI):** Integration with **Google Gemini AI** for real-time task risk assessment and strategic advising.
 
 ---
 
