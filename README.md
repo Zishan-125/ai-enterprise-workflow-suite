@@ -37,35 +37,29 @@ Built for **innovation ecosystems**, SmartDo acts as a **Neural Task Architect**
 ## 🏗️ System Architecture (Industry Flow)
 
 
-flowchart TD
-    subgraph Client Layer
-        A[User Interaction]
-        B[React UI - Vite + TypeScript]
+graph TD
+    subgraph "Client Layer (Edge)"
+        A[React 18 SPA] -->|Axios Interceptors| B(Vercel Edge Network)
     end
 
-    subgraph API Layer
-        C[Node.js API Gateway]
-        D[Auth Middleware - JWT]
-        E[Business Logic Engine]
+    subgraph "Logic Layer (Compute)"
+        B -->|Encrypted HTTPS| C[Node.js / Express Server]
+        C -->|JWT Auth| D{Request Router}
     end
 
-    subgraph Intelligence Layer
-        F[Gemini AI Engine]
-        G[Risk Analysis Module]
+    subgraph "Cognitive Layer (AI)"
+        D -->|Task Context| E[Google Gemini 1.5 Flash]
+        E -->|Neural Insights| D
     end
 
-    subgraph Data Layer
-        H[(MySQL - Aiven Cloud)]
+    subgraph "Persistence Layer (Storage)"
+        D -->|Sequelize/SQL| F[(Aiven Managed MySQL)]
     end
 
-    A --> B
-    B -->|HTTPS / REST| C
-    C --> D --> E
-    E --> H
-    E -->|AI Query| F
-    F --> G --> E
-    E --> C
-    C --> B
+    style A fill:#6366f1,stroke:#fff,stroke-width:2px,color:#fff
+    style C fill:#0f172a,stroke:#6366f1,stroke-width:2px,color:#fff
+    style E fill:#4338ca,stroke:#fff,stroke-width:2px,color:#fff
+    style F fill:#f97316,stroke:#fff,stroke-width:2px,color:#fff
 
 ---
 
