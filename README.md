@@ -52,6 +52,7 @@ sequenceDiagram
     U->>FE: Updates Task Status to "High Risk"
     FE->>BE: PUT /api/tasks/:id (JWT Auth)
     BE->>BE: Verify Token & Sanitize Input
+    BE->>BE: Process Task Logic
     BE->>DB: UPDATE tasks SET risk='High' WHERE id=X
     DB-->>BE: Success Confirmation
     
@@ -62,6 +63,7 @@ sequenceDiagram
     
     BE-->>FE: HTTP 200 (Updated Task + AI Insight)
     FE->>U: UI Update (Real-time View)
+
 
 
 * **Frontend (Neural UI):** Built with **React 18** and **TypeScript**. Powered by **Vite** for sub-second hot module replacement.
