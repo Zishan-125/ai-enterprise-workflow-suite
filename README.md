@@ -47,6 +47,20 @@ SmartDo follows a high-availability, distributed cloud architecture:
 
 ## 🛠️ Deployment Procedure (The "Zero-to-Cloud" Path)
 
+sequenceDiagram
+    participant Dev
+    participant GitHub
+    participant Render
+    participant Vercel
+    participant Aiven
+
+    Dev->>GitHub: Push Code
+    GitHub->>Render: Deploy Backend
+    GitHub->>Vercel: Deploy Frontend
+    Render->>Aiven: Connect Database
+    Render->>Gemini: AI Requests
+    Vercel->>Render: API Calls
+
 ### 1. Database Provisioning (Aiven)
 * Deploy a MySQL 8.0 instance.
 * Configure **IP Whitelisting** to allow global cloud connections.
