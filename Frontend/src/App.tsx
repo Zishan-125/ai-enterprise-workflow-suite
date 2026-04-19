@@ -20,7 +20,7 @@ import BillingView from './views/Billing';
 import SettingsView from './views/Settings';
 import AuthView from './views/Auth';
 
-const API_BASE = "http://localhost:5000/api";
+const API_BASE = import.meta.env.VITE_API_BASE_URL || "https://ai-enterprise-workflow-suite.onrender.com";
 
 const App = () => {
   // --- 1. AUTH & NAVIGATION STATE ---

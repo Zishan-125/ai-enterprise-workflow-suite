@@ -2,7 +2,8 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:5000/api",
+  // This ensures it uses Render in production and localhost during development
+  baseURL: import.meta.env.VITE_API_BASE_URL || "https://ai-enterprise-workflow-suite.onrender.com/api",
 });
 
 // 🔐 Attach real JWT token to every request
