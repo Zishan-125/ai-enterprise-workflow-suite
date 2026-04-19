@@ -1,241 +1,95 @@
-# ⚡ AI Enterprise Workflow Suite
+# ⚡ SmartDo: AI-Powered Enterprise Workflow Suite
+> The Neural Task Architect for the Modern Age.
 
-> A cloud-native, AI-powered workflow operating system engineered for intelligent task orchestration and decision support.
+[![Vercel](https://img.shields.io/badge/Frontend-Vercel-black?style=for-the-badge&logo=vercel)](https://ai-enterprise-workflow-suite.vercel.app)
+[![Render](https://img.shields.io/badge/Backend-Render-EFEFEF?style=for-the-badge&logo=render)](https://ai-enterprise-workflow-suite.onrender.com)
+[![Aiven](https://img.shields.io/badge/Database-Aiven%20MySQL-orange?style=for-the-badge&logo=aiven)](https://aiven.io)
+[![Gemini](https://img.shields.io/badge/AI-Gemini%20Neural-blue?style=for-the-badge&logo=google-gemini)](https://ai.google.dev)
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Architecture-Full%20Stack%20AI-black?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Frontend-React%20%2B%20TS-blue?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Backend-Node%20%2B%20Prisma-green?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/AI-Gemini%202.5-purple?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Deployment-Vercel%20%7C%20Render-orange?style=for-the-badge" />
-</p>
-
----
-
-## 🌐 Live System
-
-🔗 https://ai-enterprise-workflow-suite.vercel.app/
-
----
-
-## 🧠 Executive Summary
-
-AI Enterprise Workflow Suite is a **distributed intelligent system** that transforms traditional task management into a **decision-driven workflow engine**.
-
-Instead of storing tasks, the system:
-- Interprets context
-- Generates insights
-- Assists decision-making through AI
+**SmartDo** is a mission-critical task management ecosystem that bridges the gap between raw data and actionable AI insights. Designed for the Feni University Innovation Hub, it utilizes a proprietary "Neural Link" to analyze task risks, optimize startup velocity, and automate architectural auditing.
 
 ---
 
 ## 🏗️ System Architecture
 
+SmartDo follows a high-availability, distributed cloud architecture:
 
-┌──────────────────────────┐
-│ Frontend │
-│ (React + Zustand) │
-│ Hosted on Vercel │
-└────────────┬────────────┘
-│ HTTPS (Axios + JWT)
-▼
-┌──────────────────────────┐
-│ Backend │
-│ Node.js + Express │
-│ Hosted on Render │
-└────────────┬────────────┘
-│ Prisma ORM
-▼
-┌──────────────────────────┐
-│ Database │
-│ Aiven MySQL │
-└────────────┬────────────┘
-│ Context Injection
-▼
-┌──────────────────────────┐
-│ AI Engine │
-│ Gemini 2.5 Flash │
-└──────────────────────────┘
+* **Frontend (Neural UI):** Built with **React 18** and **TypeScript**. Powered by **Vite** for sub-second hot module replacement.
+* **Neural Engine (API):** A scalable **Node.js/Express** microservice hosted on **Render**, handling JWT authentication and encrypted data flow.
+* **Database (Memory Cell):** An enterprise-grade **MySQL** instance hosted on **Aiven (Bangalore Cluster)**, ensuring ACID compliance.
+* **Cognitive Layer (AI):** Integration with **Google Gemini AI** for real-time task risk assessment and strategic advising.
+
 
 
 ---
 
-## 🔄 Data Flow Pipeline
+## 🛠️ Deployment Procedure (The "Zero-to-Cloud" Path)
 
-### 1. UI Interaction
-- User performs actions (task create / AI chat)
-- Zustand manages real-time state
+### 1. Database Provisioning (Aiven)
+* Deploy a MySQL 8.0 instance.
+* Configure **IP Whitelisting** to allow global cloud connections.
+* Execute `schema.sql` to initialize task and user tables.
 
-### 2. API Layer
-- Axios sends request with JWT token
-- Secure communication via HTTPS
+### 2. Backend Orchestration (Render)
+* Link the GitHub repository and set the root directory to `/Backend`.
+* Inject the `DATABASE_URL` and `JWT_SECRET` variables.
+* Establish the `/api/ai/advisor` endpoint for Gemini integration.
 
-### 3. Backend Processing
-- Express handles request routing
-- Middleware validates authentication
-- Business logic executes
-
-### 4. Database Layer
-- Prisma performs type-safe queries
-- MySQL persists structured data
-
-### 5. AI Processing
-- Task data injected into prompts
-- Gemini returns contextual intelligence
+### 3. Frontend Synthesis (Vercel)
+* Configure the **Framework Preset** to **Vite**.
+* Override build commands to bypass strict TS transpilation (`npx vite build`).
+* Inject `VITE_API_BASE_URL` to link the UI to the Render cluster.
 
 ---
 
-## 🧩 Core Features
+## 🚀 Key Features
 
-### 🔐 Authentication
-- JWT-based stateless auth
-- Auto-login via token validation
-- Protected API routes
-
-### 📊 Task Engine
-- Full CRUD operations
-- Category + risk classification
-- Real-time updates
-
-### 🧠 AI Assistant (Neural Brain)
-- Context-aware chat
-- Task-aware responses
-- Anti-hallucination logic
-
-### 📈 AI Advisor
-- Task analysis
-- Risk detection
-- Executive-level insights
-
-### 📄 Export System
-- PDF report generation
-- Snapshot of system state
+* **⚡ Real-Time Sync:** MySQL persistence ensures your tasks live everywhere.
+* **🧠 Neural Insights:** One-click AI advising to detect "High-Risk" nodes in your workflow.
+* **🛡️ Secure Auth:** Robust JWT-based security with auto-logout on token expiration.
+* **📊 Pro Analytics:** Export high-fidelity PDF audits for startup performance tracking.
 
 ---
 
-## ⚙️ Tech Stack
+## 💻 Technical Stack
 
-### Frontend
-- React (TypeScript)
-- Zustand
-- Tailwind CSS
-- Framer Motion
-
-### Backend
-- Node.js
-- Express.js
-- Prisma ORM
-
-### Database
-- MySQL (Aiven Cloud)
-
-### AI
-- Google Gemini 2.5 Flash
-
-### Deployment
-- Vercel (Frontend)
-- Render (Backend)
+| Layer | Technology |
+| :--- | :--- |
+| **Frontend** | React, TypeScript, Tailwind CSS, Framer Motion |
+| **Backend** | Node.js, Express, Axios |
+| **Database** | MySQL (via Aiven) |
+| **Deployment** | Vercel (UI), Render (API) |
+| **AI** | Google Gemini 1.5 Flash |
 
 ---
 
-## 📂 Project Structure
+## 📦 Local Development
 
-
-Frontend/
-src/
-api/
-components/
-views/
-store/
-config/
-
-Backend/
-controllers/
-routes/
-models/
-middleware/
-prisma/
-config/
-
+1. **Clone the Sector:**
+   ```bash
+   git clone [https://github.com/your-username/smartdo-suite.git](https://github.com/your-username/smartdo-suite.git)
 
 ---
 
-## 🛠️ Local Development Setup
+2. Initialize Engine (Backend):
+   cd Backend
+   npm install
+   npm start
 
-### Clone Repository
-```bash
-git clone https://github.com/Zishan-125/ai-enterprise-workflow-suite.git
-cd ai-enterprise-workflow-suite
-Backend Setup
-cd Backend
-npm install
+---
 
-npx prisma generate
-npx prisma migrate dev --name init
+3. Initialize UI (Frontend):
+   cd Frontend
+   npm install
+   npm run dev
 
-npm run dev
-Frontend Setup
-cd Frontend
-npm install
-npm run dev
-🔐 Environment Variables
-Backend (.env)
-PORT=5000
-DATABASE_URL=your_mysql_url
-JWT_SECRET=your_secret
-GEMINI_API_KEY=your_key
-Frontend (.env)
-VITE_API_BASE_URL=https://ai-enterprise-workflow-suite.onrender.com
-🔌 API Design
-Auth
-POST /api/auth/login
-POST /api/auth/signup
-Tasks
-GET    /api/tasks
-POST   /api/tasks
-PUT    /api/tasks/:id
-DELETE /api/tasks/:id
-AI
-POST /api/ai/chat
-POST /api/ai/advisor
-🧠 AI System Design
-Chat Flow
-User → Frontend → Backend → Gemini → Response → UI
-Advisor Flow
-Tasks → Backend → AI Analysis → Insight → Dashboard
-Prompt Strategy
-Inject real task data
-Limit token output
-Maintain structured responses
-🚀 Performance Strategy
-Stateless backend (scalable)
-Minimal API payloads
-Client-side token validation
-Optimistic UI updates
-🔐 Security
-JWT authentication
-Middleware-based route protection
-Environment variable isolation
-Token expiration handling
-☁️ Deployment
-Layer	Platform
-Frontend	Vercel
-Backend	Render
-Database	Aiven
-📊 Production Readiness
-Cloud deployed
-Secure authentication
-AI integration
-Scalable architecture
-Clean modular design
-🌍 Vision
+---
 
-To build a Neural Operating System for Workflows
-where AI is not a feature — but the core decision engine.
+## 👤 Author
 
-👤 Author
-
-Abdullah Al Mamun Zishan
-CSE, Feni University
+**Abdullah Al Mamun Zishan**  
+🎓 CSE, Feni University  
+📚 Batch: CSE 31st (UG)  
+🆔 ID: 232031009  
 
 🔗 https://www.linkedin.com/in/abdullah-al-mamun-zishan-606550282
