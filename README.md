@@ -1,25 +1,71 @@
-# ⚡ SmartDo: AI-Powered Enterprise Workflow Suite
-> The Neural Task Architect for the Modern Age.
+# ⚡ SmartDo — AI-Powered Enterprise Workflow Suite  
+> *Engineering Intelligence into Every Task.*
 
-[![Vercel](https://img.shields.io/badge/Frontend-Vercel-black?style=for-the-badge&logo=vercel)](https://ai-enterprise-workflow-suite.vercel.app)
-[![Render](https://img.shields.io/badge/Backend-Render-EFEFEF?style=for-the-badge&logo=render)](https://ai-enterprise-workflow-suite.onrender.com)
-[![Aiven](https://img.shields.io/badge/Database-Aiven%20MySQL-orange?style=for-the-badge&logo=aiven)](https://aiven.io)
-[![Gemini](https://img.shields.io/badge/AI-Gemini%20Neural-blue?style=for-the-badge&logo=google-gemini)](https://ai.google.dev)
+<p align="center">
+  <img src="https://media.giphy.com/media/f3iwJFOVOwuy7K6FFw/giphy.gif" width="420"/>
+</p>
 
-**SmartDo** is a mission-critical task management ecosystem that bridges the gap between raw data and actionable AI insights. Designed for the Feni University Innovation Hub, it utilizes a proprietary "Neural Link" to analyze task risks, optimize startup velocity, and automate architectural auditing.
+<p align="center">
+  <strong>From Execution → Intelligence → Optimization</strong><br/>
+  A cognitive workflow system designed for modern builders.
+</p>
+
+<p align="center">
+  <a href="https://ai-enterprise-workflow-suite.vercel.app">
+    <img src="https://img.shields.io/badge/🚀 Live%20App-Explore-black?style=for-the-badge">
+  </a>
+  <a href="https://ai-enterprise-workflow-suite.onrender.com">
+    <img src="https://img.shields.io/badge/API-Operational-success?style=for-the-badge">
+  </a>
+</p>
 
 ---
 
-## 🏗️ System Architecture
+## 🧠 Product Vision
 
-SmartDo follows a high-availability, distributed cloud architecture:
+**SmartDo** transforms traditional task tracking into an **AI-driven decision system**.
 
-* **Frontend (Neural UI):** Built with **React 18** and **TypeScript**. Powered by **Vite** for sub-second hot module replacement.
-* **Neural Engine (API):** A scalable **Node.js/Express** microservice hosted on **Render**, handling JWT authentication and encrypted data flow.
-* **Database (Memory Cell):** An enterprise-grade **MySQL** instance hosted on **Aiven (Bangalore Cluster)**, ensuring ACID compliance.
-* **Cognitive Layer (AI):** Integration with **Google Gemini AI** for real-time task risk assessment and strategic advising.
+Instead of static task lists, it introduces:
+- Predictive workflow intelligence  
+- Real-time risk detection  
+- AI-assisted execution strategy  
 
+Built for **innovation ecosystems**, SmartDo acts as a **Neural Task Architect**—where every task becomes data, and every dataset becomes insight.
 
+---
+
+## 🏗️ System Architecture (Industry Flow)
+
+```mermaid
+flowchart TD
+    subgraph Client Layer
+        A[User Interaction]
+        B[React UI - Vite + TypeScript]
+    end
+
+    subgraph API Layer
+        C[Node.js API Gateway]
+        D[Auth Middleware - JWT]
+        E[Business Logic Engine]
+    end
+
+    subgraph Intelligence Layer
+        F[Gemini AI Engine]
+        G[Risk Analysis Module]
+    end
+
+    subgraph Data Layer
+        H[(MySQL - Aiven Cloud)]
+    end
+
+    A --> B
+    B -->|HTTPS / REST| C
+    C --> D --> E
+    E --> H
+    E -->|AI Query| F
+    F --> G --> E
+    E --> C
+    C --> B
 
 ---
 
