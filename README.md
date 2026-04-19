@@ -40,29 +40,34 @@ Built for **innovation ecosystems**, SmartDo acts as a **Neural Task Architect**
 
 SmartDo follows a high-availability, distributed cloud architecture.
 
-### 🛰️ Neural Request Lifecycle
+## 🧠 Neural System Workflow (Live Execution Flow)
 
+```mermaid
 sequenceDiagram
-    participant U as User
-    participant FE as React Frontend (Vercel)
-    participant BE as Node.js Engine (Render)
-    participant DB as MySQL (Aiven)
-    participant AI as Gemini 2.5 Flash
+    autonumber
 
-    U->>FE: Updates Task Status to "High Risk"
-    FE->>BE: PUT /api/tasks/:id (JWT Auth)
-    BE->>BE: Verify Token & Sanitize Input
-    BE->>BE: Process Task Logic
-    BE->>DB: UPDATE tasks SET risk='High' WHERE id=X
-    DB-->>BE: Success Confirmation
-    
-    Note over BE, AI: Cognitive Analysis Phase
-    
-    BE->>AI: POST /v1/models/gemini-1.5-flash (Current Context)
-    AI-->>BE: Returns Strategic Neural Insight
-    
-    BE-->>FE: HTTP 200 (Updated Task + AI Insight)
-    FE->>U: UI Update (Real-time View)
+    participant U as 👤 User
+    participant FE as ⚛️ React Frontend (Vercel)
+    participant BE as 🧠 Node.js Engine (Render)
+    participant DB as 🗄️ MySQL (Aiven)
+    participant AI as 🤖 Gemini 1.5 Flash
+
+    U->>FE: Updates Task Status → "High Risk"
+    FE->>BE: PUT /api/tasks/:id (JWT Token)
+
+    BE->>BE: 🔐 Verify JWT + Validate Payload
+
+    BE->>DB: UPDATE tasks SET risk="High" WHERE id=X
+    DB-->>BE: ✅ Update Successful
+
+    Note over BE,AI: 🧠 Cognitive Analysis Layer Activated
+
+    BE->>AI: Send Task Context + User State
+    AI-->>BE: Returns Neural Insight + Recommendations
+
+    BE-->>FE: Response (Updated Task + AI Insight)
+    FE-->>U: ⚡ Real-time UI Update Rendered
+```
 
 
 
