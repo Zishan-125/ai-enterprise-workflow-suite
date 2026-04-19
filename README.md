@@ -79,16 +79,75 @@ SmartDo follows a high-availability, distributed cloud architecture:
 
 ---
 
-## 💻 Technical Stack
+## 🧩 Full Technology Stack (With Badges)
 
-| Layer | Technology |
-| :--- | :--- |
-| **Frontend** | React, TypeScript, Tailwind CSS, Framer Motion |
-| **Backend** | Node.js, Express, Axios |
-| **ORM (Data Layer)** | Prisma |
-| **Database** | MySQL (via Aiven) |
-| **Deployment** | Vercel (UI), Render (API) |
-| **AI** | Google Gemini 2.5 Flash |
+---
+
+### 🎨 Frontend
+
+<p align="center">
+
+![React](https://img.shields.io/badge/React-UI-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-Typed_JS-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-Animations-ff69b4?style=for-the-badge)
+
+</p>
+
+---
+
+### ⚙️ Backend
+
+<p align="center">
+
+![Node.js](https://img.shields.io/badge/Node.js-Runtime-3C873A?style=for-the-badge&logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express-API-black?style=for-the-badge&logo=express)
+![Prisma](https://img.shields.io/badge/Prisma-ORM-2D3748?style=for-the-badge&logo=prisma)
+
+</p>
+
+---
+
+### 🗄️ Database
+
+<p align="center">
+
+![MySQL](https://img.shields.io/badge/MySQL-Database-00758F?style=for-the-badge&logo=mysql&logoColor=white)
+![Aiven](https://img.shields.io/badge/Aiven-Cloud_DB-orange?style=for-the-badge)
+
+</p>
+
+---
+
+### 🤖 AI Layer
+
+<p align="center">
+
+![Gemini](https://img.shields.io/badge/Google-Gemini_AI-purple?style=for-the-badge&logo=google)
+
+</p>
+
+---
+
+### 🔐 Authentication & API
+
+<p align="center">
+
+![JWT](https://img.shields.io/badge/JWT-Auth-000000?style=for-the-badge&logo=jsonwebtokens)
+![Axios](https://img.shields.io/badge/Axios-HTTP_Client-5A29E4?style=for-the-badge)
+
+</p>
+
+---
+
+### 🚀 Deployment
+
+<p align="center">
+
+![Vercel](https://img.shields.io/badge/Vercel-Frontend-black?style=for-the-badge&logo=vercel)
+![Render](https://img.shields.io/badge/Render-Backend-46E3B7?style=for-the-badge&logo=render)
+
+</p>
 
 ---
 
