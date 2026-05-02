@@ -26,6 +26,16 @@ model User {
   createdAt DateTime @default(now())
 }
 
+model TeamMember {
+  id        Int      @id @default(autoincrement())
+  name      String
+  role      String
+  email     String   @unique
+  isOnline  Boolean  @default(false)
+  avatar    String?
+  createdAt DateTime @default(now())
+}
+
 model Task {
   id        Int      @id @default(autoincrement())
   title     String
