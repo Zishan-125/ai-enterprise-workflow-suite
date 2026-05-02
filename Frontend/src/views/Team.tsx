@@ -63,3 +63,6 @@ const TeamView = ({ darkMode }: { darkMode: boolean }) => {
     </div>
   );
 };
+
+
+export default TeamView;
