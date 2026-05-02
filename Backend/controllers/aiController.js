@@ -80,3 +80,13 @@ Make the goal feel achievable. No markdown.`;
         res.status(500).json({ message: "Let's take it one step at a time. You've got this." });
     }
 };
+
+
+exports.prioritizeTasks = async (req, res) => {
+    try {
+        // Basic placeholder logic to satisfy the router
+        res.status(200).json({ message: "Prioritization engine online." });
+    } catch (error) {
+        res.status(500).json({ error: "Prioritization failed." });
+    }
+};
